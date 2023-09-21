@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles_common.css">
+  <link rel="stylesheet" href="css/styles_home.css"> 
+  <!-- Substitua "styles_home.css" pelo nome correto do arquivo -->
+
+  <style>
+    /* Configurações gerais do corpo */
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('https://decisaosistemas.com.br/wp-content/uploads/2021/06/tecnologia-na-gestao-das-empresas.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      /* Adicione outros estilos ao body se necessário */
+    }
+
+    /* Estilos para dispositivos móveis */
+    @media screen and (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+    }
+
+    /* Estilos para o menu de navegação */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 10px 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease; /* Adiciona uma transição suave na cor do texto */
+    }
+
+    nav ul li a:hover {
+      color: #f9d418; /* Muda a cor do texto ao passar o mouse */
+    }
+
+    /* Adicione um espaço para o conteúdo principal não ficar sob o menu */
+    body {
+      padding-top: 50px;
+      padding-bottom: 100px; /* Espaço para o rodapé */
+    }
+
+    /* Estilos para o rodapé */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.8); /* Cor de fundo do rodapé */
+      color: #fff; /* Cor do texto do rodapé */
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+  <!-- Fim do bloco de estilo -->
+
+  <title>Seu Nome - Portfólio</title>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">SOBRE MIM</a></li>
+      <li><a href="portfolio.html">PORTFOLIO</a></li>
+      <li><a href="contact.html">CONTATO</a></li>
+    </ul>
+  </nav>
+  <header id="home">
+    <!-- Resto do cabeçalho ... -->
+  </header>
+
+  <footer>
+    <p>© 2023 Roberto Manfrin Jr. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

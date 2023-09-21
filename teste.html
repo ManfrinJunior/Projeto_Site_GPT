@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles_common.css">
+  <link rel="stylesheet" href="css/styles_home.css">
+  <!-- Substitua "styles_home.css" pelo nome correto do arquivo -->
+
+  <style>
+    /* Configurações gerais do corpo */
+    body {
+      margin: 0;
+      padding: 0;
+      /* Adicione outros estilos ao body se necessário */
+    }
+
+    /* Estilos para dispositivos móveis */
+    @media screen and (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+    }
+
+    /* Estilos para o menu de navegação */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 10px 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease; /* Adiciona uma transição suave na cor do texto */
+    }
+
+    nav ul li a:hover {
+      color: #f9d418; /* Muda a cor do texto ao passar o mouse */
+    }
+
+    /* Adicione um espaço para o conteúdo principal não ficar sob o menu */
+    body {
+      padding-top: 50px;
+      padding-bottom: 100px; /* Espaço para o rodapé */
+    }
+
+    /* Estilos para as seções */
+    .featured {
+      height: 100vh; /* Faz com que a seção ocupe 100% da altura da viewport */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Cores para cada seção */
+    #about {
+      background-color: #f2f2f2; /* Cinza claro */
+    }
+
+    #portfolio {
+      background-color: #3498db; /* Azul */
+    }
+
+    #contact {
+      background-color: #e74c3c; /* Vermelho */
+    }
+
+    /* Estilos para o rodapé */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.8); /* Cor de fundo do rodapé */
+      color: #fff; /* Cor do texto do rodapé */
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Estilos para a home */
+    #home {
+      background-image: url('https://decisaosistemas.com.br/wp-content/uploads/2021/06/tecnologia-na-gestao-das-empresas.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      height: 100vh; /* Faz com que a home ocupe 100% da altura da viewport */
+    }
+  </style>
+  <!-- Fim do bloco de estilo -->
+
+  <title>Seu Nome - Portfólio</title>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#about">SOBRE MIM</a></li>
+      <li><a href="#portfolio">PORTFOLIO</a></li>
+      <li><a href="#contact">CONTATO</a></li>
+    </ul>
+  </nav>
+  <header id="home">
+    <!-- Resto do cabeçalho ... -->
+  </header>
+
+  <main>
+    <section class="featured" id="about">
+      <h2>Sobre Mim</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing."</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing."</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing."</p>
+    </section>
+    <section class="featured" id="portfolio">
+      <h2>Meu Portfólio</h2>
+      <p>Conteúdo da seção "Portfólio"</p>
+    </section>
+    <section class="featured" id="contact">
+      <h2>Contato</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing."</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2023 Roberto Manfrin Jr. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
